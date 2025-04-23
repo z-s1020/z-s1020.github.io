@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>刷脸设备分发收银通小程序</title>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@400;500;700&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        body {
+            font-family: 'Noto Sans SC', sans-serif;
+            background-color: #f9fafb;
+            color: #374151;
+            line-height: 1.6;
+        }
+        h1 {
+            font-size: 2.5rem;
+            font-weight: 700;
+            text-align: center;
+            margin: 3rem 0;
+            color: #111827;
+            text-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+        h2 {
+            font-size: 1.75rem;
+            font-weight: 600;
+            margin-top: 3rem;
+            margin-bottom: 1.5rem;
+            color: #1f2937;
+            border-bottom: 2px solid #e5e7eb;
+            padding-bottom: 0.5rem;
+        }
+        h3 {
+            font-size: 1.375rem;
+            font-weight: 500;
+            margin-top: 2rem;
+            margin-bottom: 1rem;
+            color: #374151;
+        }
+        p {
+            margin-bottom: 1rem;
+        }
+        img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 0.5rem;
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+            margin-top: 1rem;
+            margin-bottom: 1.5rem;
+            transition: transform 0.3s ease;
+        }
+        img:hover {
+            transform: scale(1.02);
+        }
+        .button-container {
+            display: flex;
+            justify-content: center;
+            gap: 1.5rem;
+            margin-top: 3rem;
+            margin-bottom: 3rem;
+        }
+        .button {
+            padding: 0.875rem 1.75rem;
+            background-color: #2563eb;
+            color: white;
+            border-radius: 0.5rem;
+            text-decoration: none;
+            transition: background-color 0.3s ease, transform 0.3s ease;
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+        }
+        .button:hover {
+            background-color: #1d4ed8;
+            transform: translateY(-2px);
+        }
+        .content {
+            max-width: 850px;
+            margin: 0 auto;
+            padding: 0 1.5rem;
+            background-color: white;
+            border-radius: 0.5rem;
+            box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+            padding: 2rem;
+            margin-top: 2rem;
+            margin-bottom: 2rem;
+        }
+        a {
+            color: #2563eb;
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+        a:hover {
+            color: #1d4ed8;
+            text-decoration: underline;
+        }
+        /* 模态框样式 */
+        .modal {
+            display: none;
+            position: fixed;
+            z-index: 1;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            overflow: auto;
+            background-color: rgba(0, 0, 0, 0.4);
+        }
+        .modal-content {
+            background-color: #fefefe;
+            margin: 15% auto;
+            padding: 20px;
+            border: 1px solid #888;
+            width: 80%;
+            border-radius: 0.5rem;
+        }
+        .close {
+            color: #aaa;
+            float: right;
+            font-size: 28px;
+            font-weight: bold;
+        }
+        .close:hover,
+        .close:focus {
+            color: black;
+            text-decoration: none;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <div class="content">
+        <h1>刷脸设备分发收银通小程序</h1>
+
+        <h2>一：设备入库</h2>
+        <p>备注：申请信息：代理商编号：7626736</p>
+        <h3>1. 发送入库申请邮件</h3>
+        <p>同时发送入库申请邮件到这两个邮箱：<a href="mailto:v_sandy@yeahka.com">v_sandy@yeahka.com</a>  <a href="mailto:v_hongyan@yeahka.com">v_hongyan@yeahka.com</a></p>
+        <p>邮件模板： <a href="http://sfl-tp.oss-cn-beijing.aliyuncs.com/Admin/ImageGallery/17453794056808604d785e5.jpg">点击查看</a></p>
+        <h3>2. 等待回复与分发</h3>
+        <p>等待邮件回复已处理，发 sn 给管理员分发小程序。</p>
+        <h3>3. 下载收银通展业版</h3>
+        <p>下载收银通展业版为商户进件（下载按钮在页面下方）</p>
+
+        <h2>二：进件流程</h2>
+        <h3>1. 打开收银通展业版点击新增商户</h3>
+        <p>（附图片）：</p>
+        <img src="http://sfl-tp.oss-cn-beijing.aliyuncs.com/Admin/ImageGallery/1745379821680861edab235.jpg" alt="新增商户图片">
+        <p>填写账号信息：</p>
+        <img src="http://sfl-tp.oss-cn-beijing.aliyuncs.com/Admin/ImageGallery/17453799246808625470b8b.jpg" alt="填写账号信息图片">
+        <h3>2. 提交后接收短信</h3>
+        <p>提交后，顾客手机会收到短信，内有账号和初始密码</p>
+        <img src="http://sfl-tp.oss-cn-beijing.aliyuncs.com/Admin/ImageGallery/1745380301680863cd70000.jpg" alt="短信附图">
+        <h3>3. 如实填写商户信息并提交审核</h3>
+        <p>如实填写商户信息：</p>
+        <img src="http://sfl-tp.oss-cn-beijing.aliyuncs.com/Admin/ImageGallery/17453804136808643d6ae92.jpg" alt="填写商户信息图片">
+        <p>点击提交审核。</p>
+        <h3>4. 支付宝/微信审核商户资质</h3>
+        <p>支付宝/微信审核商户资质（如原先就有可直接扫码授权，更快）</p>
+
+        <h2>三：商户绑定设备</h2>
+        <h3>1. 设备绑定操作</h3>
+        <p>点击“我的”，点击“终端管理”</p>
+        <img src="http://sfl-tp.oss-cn-beijing.aliyuncs.com/Admin/ImageGallery/1745380771680865a388a52.jpg" alt="终端管理图片">
+        <p>点击“机具分配/绑定”</p>
+        <img src="http://sfl-tp.oss-cn-beijing.aliyuncs.com/Admin/ImageGallery/17453812796808679f31161.jpg" alt="机具分配/绑定图片">
+        <p>找到已经分配好的设备绑定到审核通过的商户名下</p>
+        <h3>2. 商户登录刷脸设备</h3>
+        <p>商户登录刷脸设备</p>
+        <h3>3. 下载收银通商户版</h3>
+        <p>商户下载收银通商户版查看流水（下载按钮在页面最下方）</p>
+
+        <div class="button-container">
+            <a href="https://h5.leshuazf.com/download_qr_jh_syt_manager.html" class="button">收银通展业版</a>
+            <a href="#" class="button" id="showImageBtn">收银通商户版</a>
+        </div>
+    </div>
+
+    <!-- 模态框 -->
+    <div id="myModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <img id="modalImage" src="http://sfl-tp.oss-cn-beijing.aliyuncs.com/Admin/ImageGallery/17453817396808696b05d00.png" alt="收银通商户版图片">
+        </div>
+    </div>
+
+    <script>
+        // 获取模态框
+        const modal = document.getElementById('myModal');
+        // 获取按钮
+        const btn = document.getElementById('showImageBtn');
+        // 获取关闭按钮
+        const span = document.getElementsByClassName('close')[0];
+
+        // 点击按钮时显示模态框
+        btn.onclick = function() {
+            modal.style.display = 'block';
+        }
+
+        // 点击关闭按钮时隐藏模态框
+        span.onclick = function() {
+            modal.style.display = 'none';
+        }
+
+        // 点击模态框外部时隐藏模态框
+        window.onclick = function(event) {
+            if (event.target === modal) {
+                modal.style.display = 'none';
+            }
+        }
+    </script>
+</body>
+</html>
+    
