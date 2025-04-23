@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>POS机断联解决方法</title>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        :root {
+            --primary-color: #3498db;
+            --secondary-color: #2980b9;
+            --accent-color: #e74c3c;
+            --light-bg: #f8f9fa;
+            --text-color: #333;
+            --card-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+        }
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Noto Sans SC', sans-serif;
+            line-height: 1.6;
+            color: var(--text-color);
+            background-color: var(--light-bg);
+            padding: 20px;
+        }
+        
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            background: white;
+            border-radius: 10px;
+            box-shadow: var(--card-shadow);
+            overflow: hidden;
+        }
+        
+        header {
+            background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+            color: white;
+            padding: 25px 30px;
+            text-align: center;
+        }
+        
+        h1 {
+            font-size: 1.8rem;
+            margin-bottom: 10px;
+        }
+        
+        .header-desc {
+            font-size: 1rem;
+            opacity: 0.9;
+        }
+        
+        .steps-container {
+            padding: 30px;
+        }
+        
+        .step {
+            display: flex;
+            margin-bottom: 30px;
+            position: relative;
+            padding-left: 50px;
+        }
+        
+        .step-number {
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: 36px;
+            height: 36px;
+            background-color: var(--primary-color);
+            color: white;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: bold;
+            font-size: 1.2rem;
+        }
+        
+        .step-content {
+            flex: 1;
+        }
+        
+        .step-title {
+            font-size: 1.2rem;
+            margin-bottom: 10px;
+            color: var(--primary-color);
+            font-weight: 600;
+        }
+        
+        .step-desc {
+            margin-bottom: 15px;
+            line-height: 1.7;
+        }
+        
+        .step-image {
+            max-width: 100%;
+            border-radius: 8px;
+            margin-top: 10px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+            border: 1px solid #eee;
+        }
+        
+        .note {
+            background-color: #f8f4e5;
+            border-left: 4px solid #f1c40f;
+            padding: 15px;
+            margin: 20px 0;
+            border-radius: 0 5px 5px 0;
+        }
+        
+        .note-title {
+            font-weight: bold;
+            margin-bottom: 8px;
+            color: #d35400;
+            display: flex;
+            align-items: center;
+        }
+        
+        .note-title i {
+            margin-right: 8px;
+        }
+        
+        .footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #f1f1f1;
+            color: #666;
+            font-size: 0.9rem;
+        }
+        
+        @media (max-width: 768px) {
+            body {
+                padding: 10px;
+            }
+            
+            header {
+                padding: 20px 15px;
+            }
+            
+            h1 {
+                font-size: 1.5rem;
+            }
+            
+            .steps-container {
+                padding: 20px 15px;
+            }
+            
+            .step {
+                padding-left: 40px;
+            }
+            
+            .step-number {
+                width: 30px;
+                height: 30px;
+                font-size: 1rem;
+            }
+            
+            .step-title {
+                font-size: 1.1rem;
+            }
+        }
+        
+        /* 高亮重要文本 */
+        .highlight {
+            background-color: #fffde7;
+            padding: 2px 4px;
+            border-radius: 3px;
+            font-weight: 500;
+        }
+        
+        .file-path {
+            font-family: monospace;
+            background-color: #f5f5f5;
+            padding: 2px 5px;
+            border-radius: 3px;
+            color: #d35400;
+        }
+        
+        .code {
+            font-family: monospace;
+            background-color: #f5f5f5;
+            padding: 2px 5px;
+            border-radius: 3px;
+            color: #27ae60;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1><i class="fas fa-cash-register"></i> POS机断联解决方法</h1>
+            <p class="header-desc">按照以下步骤操作，快速解决POS机连接问题</p>
+        </header>
+        
+        <div class="steps-container">
+            <div class="step">
+                <div class="step-number">1</div>
+                <div class="step-content">
+                    <h3 class="step-title">安装343驱动</h3>
+                    <p class="step-desc">
+                        将U盘内的<span class="highlight">343驱动</span>复制到电脑，打开文件，点击<span class="file-path">Driver</span>文件夹，双击目录中最后名为<span class="file-path">SETUP.EXE</span>的文件进行安装。
+                    </p>
+                    <div class="note">
+                        <div class="note-title"><i class="fas fa-exclamation-circle"></i> 注意事项</div>
+                        <p>安装过程中请勿关闭窗口或拔出U盘，等待安装完成提示出现。</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="step">
+                <div class="step-number">2</div>
+                <div class="step-content">
+                    <h3 class="step-title">检查端口</h3>
+                    <p class="step-desc">
+                        驱动安装完成后，<span class="highlight">右击"计算机"</span>选择"管理"，打开"设备管理器"，查看"端口(COM和LPT)"选项。
+                    </p>
+                    <!-- 可以在此处添加图片 -->
+                    <!-- <img src="device-manager.jpg" alt="设备管理器截图" class="step-image"> -->
+                </div>
+            </div>
+            
+            <div class="step">
+                <div class="step-number">3</div>
+                <div class="step-content">
+                    <h3 class="step-title">更换设备并记录COM号</h3>
+                    <p class="step-desc">
+                        1. 在主机上，将原先的POS机连接端口拔出<br>
+                        2. 换上本司的<span class="highlight">小灰盒</span>并插好<br>
+                        3. 观察显示器上的343端口是否多出一个<br>
+                        4. <span class="highlight">记住新增的343端口的COM号</span>(COM后面的数字)<br>
+                        5. 将POS机的蓝牙接收器插好
+                    </p>
+                    <div class="note">
+                        <div class="note-title"><i class="fas fa-lightbulb"></i> 小技巧</div>
+                        <p>可以截屏或拍照记录COM号，防止忘记。</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="step">
+                <div class="step-number">4</div>
+                <div class="step-content">
+                    <h3 class="step-title">修改通讯参数</h3>
+                    <p class="step-desc">
+                        1. 打开<span class="file-path">C盘</span>，找到<span class="file-path">地纬文件(dr开头)</span><br>
+                        2. 连续进入直至不再是一个文件夹<br>
+                        3. 打开<span class="file-path">plugin</span>文件夹<br>
+                        4. 进入<span class="file-path">LD_APOSA8</span>文件夹<br>
+                        5. 双击<span class="highlight">黄色小钱包图标</span>的程序<br>
+                        6. 登录界面输入: <span class="code">账户: 99</span> <span class="code">密码: 0000</span><br>
+                        7. 进入后修改<span class="highlight">通讯参数</span>为刚才记住的COM口值<br>
+                        8. 按<span class="code">ESC</span>退出窗口<br>
+                        9. 在屏幕右下角找到这个程序图标，点击退出
+                    </p>
+                </div>
+            </div>
+            
+            <div class="step">
+                <div class="step-number">5</div>
+                <div class="step-content">
+                    <h3 class="step-title">重复操作</h3>
+                    <p class="step-desc">
+                        同样在<span class="file-path">C盘</span>找到<span class="file-path">LD_APOSA8</span>文件，按照<span class="highlight">步骤4</span>再执行一遍，完成后在右下角点击图标退出。
+                    </p>
+                </div>
+            </div>
+            
+            <div class="step">
+                <div class="step-number">6</div>
+                <div class="step-content">
+                    <h3 class="step-title">完成重启</h3>
+                    <p class="step-desc">
+                        重启POS机后再次使用，检查连接是否正常。
+                    </p>
+                    <div class="note" style="background-color: #e8f5e9; border-left-color: #2ecc71;">
+                        <div class="note-title" style="color: #27ae60;"><i class="fas fa-check-circle"></i> 完成检查</div>
+                        <p>如果按照以上步骤操作后问题仍未解决，请联系技术支持。</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="footer">
+            <p>© 2025 华睿技术支持中心 | 如有疑问请联系客服</p>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>医疗机铺设方法</title>
+    <style>
+        :root {
+            --primary-color: #4361ee;
+            --secondary-color: #3a0ca3;
+            --accent-color: #4895ef;
+            --text-color: #2b2d42;
+            --light-color: #f8f9fa;
+            --warning-color: #f72585;
+        }
+        
+        body {
+            font-family: 'Microsoft YaHei', Arial, sans-serif;
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+            line-height: 1.8;
+            color: var(--text-color);
+            background-color: var(--light-color);
+        }
+        
+        .header-image {
+            width: 100%;
+            max-height: 300px;
+            object-fit: cover;
+            border-radius: 12px;
+            margin-bottom: 20px;
+            box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+        }
+        
+        .divider {
+            height: 3px;
+            background: linear-gradient(to right, transparent, var(--primary-color), transparent);
+            margin: 25px 0;
+            border: none;
+        }
+        
+        h1 {
+            color: var(--secondary-color);
+            text-align: center;
+            margin: 25px 0;
+            font-size: 2.2rem;
+            position: relative;
+            padding-bottom: 15px;
+        }
+        
+        h1::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 100px;
+            height: 4px;
+            background: linear-gradient(to right, var(--primary-color), var(--accent-color));
+            border-radius: 2px;
+        }
+        
+        .note-box {
+            background-color: #fff8e1;
+            border-left: 5px solid #ffc107;
+            padding: 15px;
+            margin: 25px 0;
+            border-radius: 0 8px 8px 0;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+        }
+        
+        .content-box {
+            background-color: white;
+            padding: 30px;
+            border-radius: 12px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.08);
+            margin-bottom: 30px;
+        }
+        
+        ol {
+            padding-left: 20px;
+        }
+        
+        li {
+            margin-bottom: 20px;
+            position: relative;
+            padding-left: 10px;
+        }
+        
+        li::before {
+            content: '';
+            position: absolute;
+            left: -15px;
+            top: 10px;
+            width: 8px;
+            height: 8px;
+            background-color: var(--primary-color);
+            border-radius: 50%;
+        }
+        
+        .sub-steps {
+            list-style-type: none;
+            padding-left: 25px;
+            margin-top: 10px;
+        }
+        
+        .sub-steps li {
+            margin-bottom: 12px;
+            counter-increment: step-counter;
+        }
+        
+        .sub-steps li::before {
+            content: counter(step-counter) ".";
+            position: absolute;
+            left: -25px;
+            top: 0;
+            color: var(--accent-color);
+            font-weight: bold;
+            background: none;
+            width: auto;
+            height: auto;
+        }
+        
+        .warning-note {
+            background-color: #ffebee;
+            border-left: 5px solid var(--warning-color);
+            padding: 15px;
+            margin: 25px 0;
+            border-radius: 0 8px 8px 0;
+            position: relative;
+        }
+        
+        .warning-note::before {
+            content: "!";
+            position: absolute;
+            left: -30px;
+            top: 50%;
+            transform: translateY(-50%);
+            width: 25px;
+            height: 25px;
+            background-color: var(--warning-color);
+            color: white;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: bold;
+        }
+        
+        .btn-container {
+            text-align: center;
+            margin: 40px 0;
+        }
+        
+        .action-btn {
+            display: inline-block;
+            padding: 16px 36px;
+            background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+            color: white;
+            text-decoration: none;
+            border-radius: 50px;
+            font-weight: bold;
+            font-size: 18px;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 15px rgba(67, 97, 238, 0.3);
+            border: none;
+            cursor: pointer;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        @media (max-width: 768px) {
+            .content-box {
+                padding: 20px;
+            }
+            
+            h1 {
+                font-size: 1.8rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <img src="http://sfl-tp.oss-cn-beijing.aliyuncs.com/Admin/ImageGallery/17450257696802fae951546.jpg" 
+         alt="医疗机铺设" 
+         class="header-image">
+    
+    <div class="divider"></div>
+    
+    <h1>医疗机铺设方法</h1>
+    
+    <div class="note-box">
+        <strong>备注：</strong>铺设前请购买一个U盘下载驱动文件（驱动文件找公司技术获取）
+    </div>
+    
+    <div class="content-box">
+        <ol>
+            <li>插好电源线和usb联接线，联结线一头插设备，一头插在主机（尽量插在主机后方接口）</li>
+            
+            <li>屏幕亮起点击第一个应用进去（这是刷医保必须打开的应用，每次关机重启都需重新进入，请交代好收银员避免误以为设备异常耽误事件）</li>
+            
+            <li>电脑操作：插入U盘将驱动文件安装到电脑
+                <ol class="sub-steps">
+                    <li>将dw开头文件放入一个空文件夹</li>
+                    <li>打开地纬浏览器，点击右上角"三"状标志，点击清空缓存等待浏览器重启，重启后再次点击此标志，选择安装本地插件，点击浏览，选择存放dw文件的文件夹开始安装</li>
+                    <li>右击桌面"我的电脑"，点击管理，进入设备管理对话框，点击设备管理器，查看端口，看是否340或341启动，如果有可直接打开地纬使用设备。如若没有：下载U盘内的341驱动，下载完成后可继续使用</li>
+                </ol>
+            </li>
+        </ol>
+    </div>
+    
+    <div class="warning-note">
+        <strong>备注：</strong>如遇pos机断联，请返回上一级点击pos机断联解决方法按钮
+    </div>
+    
+    
+</body>
+</html>
