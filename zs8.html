@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>刷脸设备安装指南</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Arial', sans-serif;
+        }
+        
+        body {
+            background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+        }
+        
+        .container {
+            width: 100%;
+            max-width: 1000px;
+            text-align: center;
+        }
+        
+        h1 {
+            color: #333;
+            margin-bottom: 40px;
+            font-size: 2.5rem;
+            text-shadow: 1px 1px 2px rgba(0,0,0,0.1);
+        }
+        
+        .options {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 30px;
+        }
+        
+        .option-card {
+            background: white;
+            border-radius: 15px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+            width: 280px;
+            padding: 30px;
+            transition: all 0.3s ease;
+            cursor: pointer;
+            text-decoration: none;
+            color: #333;
+        }
+        
+        .option-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 15px 35px rgba(0, 0, 0, 0.15);
+        }
+        
+        .option-icon {
+            font-size: 3rem;
+            margin-bottom: 20px;
+            color: #4a6bdf;
+        }
+        
+        .option-title {
+            font-size: 1.5rem;
+            margin-bottom: 15px;
+            font-weight: 600;
+        }
+        
+        .option-desc {
+            color: #666;
+            font-size: 1rem;
+            line-height: 1.5;
+        }
+        
+        .linked {
+            border-top: 4px solid #4a6bdf;
+        }
+        
+        .standalone {
+            border-top: 4px solid #6c5ce7;
+        }
+        
+        .binding-steps {
+            border-top: 4px solid #00b894;
+        }
+        
+        .faq {
+            border-top: 4px solid #e17055;
+        }
+        
+        @media (max-width: 768px) {
+            .options {
+                flex-direction: column;
+                align-items: center;
+            }
+            
+            h1 {
+                font-size: 2rem;
+                margin-bottom: 30px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>请选择作业模式</h1>
+        
+        <div class="options">
+            <a href="zs9.html" class="option-card linked">
+                <div class="option-icon">🔗</div>
+                <h2 class="option-title">链接收银机</h2>
+                <p class="option-desc">通过蓝牙接收器链接收银机使用</p>
+            </a>
+            
+            <a href="zs10.html" class="option-card standalone">
+                <div class="option-icon">💻</div>
+                <h2 class="option-title">独立收银</h2>
+                <p class="option-desc">链接键盘使用</p>
+            </a>
+            
+            <a href="zs11.html" class="option-card binding-steps">
+                <div class="option-icon">📱</div>
+                <h2 class="option-title">三绑定步骤</h2>
+                <p class="option-desc">设备绑定详细操作指南</p>
+            </a>
+            
+            <a href="zs12.html" class="option-card faq">
+                <div class="option-icon">❓</div>
+                <h2 class="option-title">常见问题解析</h2>
+                <p class="option-desc">使用过程中常见问题解答</p>
+            </a>
+        </div>
+    </div>
+</body>
+</html>

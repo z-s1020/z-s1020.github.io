@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>链接收银机使用指南</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Arial', sans-serif;
+        }
+        
+        body {
+            background: linear-gradient(135deg, #f5f7fa 0%, #e6e9f0 100%);
+            min-height: 100vh;
+            padding: 40px 20px;
+        }
+        
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            background: white;
+            border-radius: 15px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+            padding: 40px;
+        }
+        
+        h1 {
+            color: #4a6bdf;
+            text-align: center;
+            margin-bottom: 30px;
+            font-size: 2.2rem;
+            border-bottom: 2px solid #f0f0f0;
+            padding-bottom: 15px;
+        }
+        
+        h2 {
+            color: #333;
+            margin: 30px 0 15px 0;
+            font-size: 1.5rem;
+        }
+        
+        .accessories {
+            background: #f8f9fa;
+            border-radius: 10px;
+            padding: 20px;
+            margin-bottom: 30px;
+        }
+        
+        .accessories h3 {
+            color: #4a6bdf;
+            margin-bottom: 15px;
+            font-size: 1.2rem;
+        }
+        
+        .accessories-list {
+            list-style-type: none;
+        }
+        
+        .accessories-list li {
+            padding: 10px 0;
+            border-bottom: 1px dashed #ddd;
+            display: flex;
+            align-items: center;
+        }
+        
+        .accessories-list li:last-child {
+            border-bottom: none;
+        }
+        
+        .accessories-list li::before {
+            content: "•";
+            color: #4a6bdf;
+            font-weight: bold;
+            font-size: 1.5rem;
+            margin-right: 10px;
+        }
+        
+        .steps {
+            counter-reset: step-counter;
+            list-style-type: none;
+        }
+        
+        .steps li {
+            padding: 20px 0 20px 60px;
+            position: relative;
+            border-bottom: 1px solid #f0f0f0;
+        }
+        
+        .steps li:last-child {
+            border-bottom: none;
+        }
+        
+        .steps li::before {
+            counter-increment: step-counter;
+            content: counter(step-counter);
+            position: absolute;
+            left: 0;
+            top: 15px;
+            width: 40px;
+            height: 40px;
+            background: #4a6bdf;
+            color: white;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: bold;
+            font-size: 1.2rem;
+        }
+        
+        .note {
+            background: #fff8e1;
+            border-left: 4px solid #ffc107;
+            padding: 15px;
+            margin: 30px 0;
+            border-radius: 0 5px 5px 0;
+        }
+        
+        .note p {
+            margin: 0;
+            color: #333;
+        }
+        
+        .btn-back {
+            display: inline-block;
+            margin-top: 30px;
+            padding: 10px 20px;
+            background: #4a6bdf;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background 0.3s;
+        }
+        
+        .btn-back:hover {
+            background: #3a5bd9;
+        }
+        
+        @media (max-width: 768px) {
+            .container {
+                padding: 30px 20px;
+            }
+            
+            h1 {
+                font-size: 1.8rem;
+            }
+            
+            .steps li {
+                padding-left: 50px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>链接收银机使用指南</h1>
+        
+        <div class="accessories">
+            <h3>所需配件：</h3>
+            <ul class="accessories-list">
+                <li>蓝牙接收器</li>
+                <li>刷脸设备</li>
+            </ul>
+        </div>
+        
+        <h2>操作步骤：</h2>
+        <ol class="steps">
+            <li>接通电源，记住蓝牙接收器上显示的验证码（通常为6位数字）</li>
+            <li>将蓝牙接收器插入收银机的USB接口（请确保插入牢固）</li>
+            <li>长按收银机的开关机键或音量键（持续3秒）进入设置模式</li>
+            <li>在设置菜单中选择"收银模式"</li>
+            <li>选择"连接收银机使用"选项</li>
+            <li>输入蓝牙接收器上显示的验证码</li>
+            <li>确认连接，等待系统提示"连接成功"</li>
+        </ol>
+        
+        <div class="note">
+            <p><strong>测试使用：</strong>连接完成后，请进行测试交易以确保所有功能正常工作。</p>
+        </div>
+        
+        <a href="javascript:history.back()" class="btn-back">返回上一页</a>
+    </div>
+</body>
+</html>

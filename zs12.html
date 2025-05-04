@@ -1,0 +1,148 @@
+<<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>设备问题</title>
+    <style>
+        body {
+            font-family: 'PingFang SC', 'Microsoft YaHei', sans-serif;
+            line-height: 1.6;
+            color: #333;
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #f5f7fa;
+        }
+        .container {
+            background-color: white;
+            border-radius: 12px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+            padding: 30px;
+            margin-bottom: 30px;
+        }
+        h1 {
+            color: #1677ff;
+            text-align: center;
+            margin-bottom: 30px;
+            padding-bottom: 15px;
+            border-bottom: 2px solid #f0f0f0;
+            font-weight: 600;
+        }
+        .solution {
+            margin-bottom: 40px;
+            padding: 25px;
+            border-radius: 8px;
+            background-color: #fafafa;
+            transition: all 0.3s ease;
+        }
+        .solution:hover {
+            background-color: #f0f7ff;
+            box-shadow: 0 2px 8px rgba(24, 144, 255, 0.1);
+        }
+        .solution-title {
+            font-size: 20px;
+            font-weight: 500;
+            color: #1677ff;
+            margin-bottom: 20px;
+            display: flex;
+            align-items: center;
+        }
+        .solution-number {
+            display: inline-block;
+            width: 32px;
+            height: 32px;
+            background-color: #1677ff;
+            color: white;
+            text-align: center;
+            line-height: 32px;
+            border-radius: 50%;
+            margin-right: 15px;
+            font-weight: bold;
+        }
+        .solution-content {
+            margin-left: 47px;
+        }
+        .solution-image {
+            max-width: 100%;
+            border: 1px solid #eee;
+            border-radius: 6px;
+            margin-top: 20px;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+            transition: transform 0.3s ease;
+        }
+        .solution-image:hover {
+            transform: scale(1.02);
+        }
+        .wechat-group {
+            background-color: #e6f7ff;
+            padding: 15px;
+            border-radius: 6px;
+            margin-top: 15px;
+            display: inline-block;
+            font-weight: 500;
+        }
+        .contact-person {
+            background-color: #fff7e6;
+            padding: 15px;
+            border-radius: 6px;
+            margin-top: 10px;
+            display: inline-block;
+            font-weight: 500;
+        }
+        .highlight {
+            color: #ff4d4f;
+            font-weight: 500;
+        }
+        @media (max-width: 768px) {
+            .container {
+                padding: 15px;
+            }
+            .solution {
+                padding: 15px;
+            }
+            .solution-title {
+                font-size: 18px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>设备问题</h1>
+        
+        <div class="solution">
+            <div class="solution-title">
+                <span class="solution-number">一</span>
+                如遇锁机问题
+            </div>
+            <div class="solution-content">
+                <img src="http://sfl-tp.oss-cn-beijing.aliyuncs.com/Admin/ImageGallery/17463265496816d415b34ba.png" alt="锁机问题图示" class="solution-image">
+                <p>请按照以下步骤解决：</p>
+                <ol>
+                    <li>加入微信群 <span class="wechat-group">"华睿刷脸设备解锁分发调转群"</span></li>
+                    <li>在群内 @ <span class="contact-person">"华睿运营-王璇"</span></li>
+                    <li>等待解锁</li>
+                </ol>
+            </div>
+        </div>
+        
+        <div class="solution">
+            <div class="solution-title">
+                <span class="solution-number">二</span>
+                "三绑定"时遇"近七日无交易信息"问题
+            </div>
+            <div class="solution-content">
+                <img src="http://sfl-tp.oss-cn-beijing.aliyuncs.com/Admin/ImageGallery/17463267296816d4c978136.png" alt="交易信息问题图示" class="solution-image">
+                <p>解决方案：</p>
+                <ol>
+                    <li>使用设备进行一笔任意金额的交易（金额大小不限）</li>
+                    <li>交易完成后，等待系统更新交易记录（通常需要几分钟）</li>
+                    <li>重新尝试进行"三绑定"操作</li>
+                </ol>
+                <p><span class="highlight">常见问题：</span>如果交易后仍然提示无交易信息，请等待10-15分钟后重试，或检查网络连接是否正常。</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

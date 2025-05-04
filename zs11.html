@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>三绑定步骤指南</title>
+    <style>
+        body {
+            font-family: 'PingFang SC', 'Microsoft YaHei', sans-serif;
+            line-height: 1.6;
+            color: #333;
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #f5f7fa;
+        }
+        .container {
+            background-color: white;
+            border-radius: 12px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+            padding: 30px;
+            margin-bottom: 30px;
+        }
+        h1 {
+            color: #1677ff;
+            text-align: center;
+            margin-bottom: 30px;
+            padding-bottom: 15px;
+            border-bottom: 2px solid #f0f0f0;
+            font-weight: 600;
+        }
+        .step {
+            margin-bottom: 30px;
+            padding: 20px;
+            border-radius: 8px;
+            background-color: #fafafa;
+            transition: all 0.3s ease;
+        }
+        .step:hover {
+            background-color: #f0f7ff;
+            box-shadow: 0 2px 8px rgba(24, 144, 255, 0.1);
+        }
+        .step-number {
+            display: inline-block;
+            width: 28px;
+            height: 28px;
+            background-color: #1677ff;
+            color: white;
+            text-align: center;
+            line-height: 28px;
+            border-radius: 50%;
+            margin-right: 10px;
+            font-weight: bold;
+        }
+        .step-title {
+            font-size: 18px;
+            font-weight: 500;
+            color: #1677ff;
+            margin-bottom: 15px;
+            display: flex;
+            align-items: center;
+        }
+        .step-image {
+            max-width: 100%;
+            border: 1px solid #eee;
+            border-radius: 6px;
+            margin-top: 15px;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+            transition: transform 0.3s ease;
+        }
+        .step-image:hover {
+            transform: scale(1.02);
+        }
+        .note {
+            background-color: #e6f7ff;
+            padding: 15px;
+            border-left: 4px solid #1890ff;
+            margin: 25px 0;
+            border-radius: 0 6px 6px 0;
+        }
+        .success-step {
+            text-align: center;
+            padding: 30px;
+            background-color: #f6ffed;
+            border: 1px solid #b7eb8f;
+            border-radius: 8px;
+        }
+        .success-icon {
+            color: #52c41a;
+            font-size: 48px;
+            margin-bottom: 15px;
+        }
+        @media (max-width: 768px) {
+            .container {
+                padding: 15px;
+            }
+            .step {
+                padding: 15px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>三绑定步骤指南</h1>
+        
+        <div class="step">
+            <div class="step-title">
+                <span class="step-number">1</span>
+                支付宝搜索"行业服务商工作台"
+            </div>
+            <img src="http://sfl-tp.oss-cn-beijing.aliyuncs.com/Admin/ImageGallery/17463250176816ce1965ee5.jpg" alt="步骤1图示" class="step-image">
+        </div>
+        
+        <div class="step">
+            <div class="step-title">
+                <span class="step-number">2</span>
+                进入后选择身份
+            </div>
+            <img src="http://sfl-tp.oss-cn-beijing.aliyuncs.com/Admin/ImageGallery/17463250766816ce5499c7a.jpg" alt="步骤2图示" class="step-image">
+        </div>
+        
+        <div class="step">
+            <div class="step-title">
+                <span class="step-number">3</span>
+                点击"设备绑定"
+            </div>
+            <img src="http://sfl-tp.oss-cn-beijing.aliyuncs.com/Admin/ImageGallery/17463255096816d005809cd.jpg" alt="步骤3图示" class="step-image">
+        </div>
+        
+        <div class="step">
+            <div class="step-title">
+                <span class="step-number">4</span>
+                扫码绑定设备
+            </div>
+            <img src="http://sfl-tp.oss-cn-beijing.aliyuncs.com/Admin/ImageGallery/17463256596816d09ba380a.jpg" alt="步骤4图示" class="step-image">
+        </div>
+        
+        <div class="step">
+            <div class="step-title">
+                <span class="step-number">5</span>
+                选择要进行的步骤
+            </div>
+            <img src="http://sfl-tp.oss-cn-beijing.aliyuncs.com/Admin/ImageGallery/17463258186816d13ab6ab5.jpg" alt="步骤5图示" class="step-image">
+        </div>
+        
+        <div class="note">
+            <strong>注意：</strong>若遇到"未获得商户授权"字样，请按照以下步骤操作
+        </div>
+        
+        <div class="step">
+            <div class="step-title">
+                <span class="step-number">6</span>
+                点击"去授权"
+            </div>
+            <img src="http://sfl-tp.oss-cn-beijing.aliyuncs.com/Admin/ImageGallery/17463259716816d1d3422c9.jpg" alt="步骤6图示" class="step-image">
+        </div>
+        
+        <div class="step">
+            <div class="step-title">
+                <span class="step-number">7</span>
+                进入授权页面，勾选商户负责人，点击"发送支付宝通知"
+            </div>
+            <img src="http://sfl-tp.oss-cn-beijing.aliyuncs.com/Admin/ImageGallery/17463260466816d21ec0a4a.jpg" alt="步骤7图示" class="step-image">
+        </div>
+        
+        <div class="success-step">
+            <div class="success-icon">✓</div>
+            <h2>步骤8：完成！</h2>
+            <img src="http://sfl-tp.oss-cn-beijing.aliyuncs.com/Admin/ImageGallery/17463263156816d32b12c0e.png" alt="完成图示" style="max-width: 80%; margin-top: 15px;">
+        </div>
+    </div>
+</body>
+</html>
